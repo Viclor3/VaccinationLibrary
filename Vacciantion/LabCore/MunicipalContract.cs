@@ -1,28 +1,42 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Windows.Controls;
 
 namespace PRITT
 {
     public class MunicipalContract
     {
-        public int Id { get; }
-        public string ContractNumber { get; }
-        public DateTime AgreementDate { get; }
-        public DateTime ValidityDate { get; }
-        public Organization Customer { get; }
-        public Organization Contractor { get; }
-        public List<Locality> Localitieses { get; set; }
+        private string ContractNumber { get; }
+        private DateTime AgreementDate { get; }
+        private DateTime ValidityDate { get; }
+        private Organization Customer { get; }
+        private Organization Contractor { get; }
+        private List<Locality> Localities { get; set; }
+        private Image Photo { get; }
 
-        public MunicipalContract(int id, string contractNumber, DateTime agreementDate, DateTime validityDate,
-            Organization customer, Organization contractor, List<Locality> localities)
+        public MunicipalContract(string contractNumber, DateTime agreementDate, DateTime validityDate,
+            Organization customer, Organization contractor, Image photo, List<Locality> localities)
+
         {
-            Id = id;
             ContractNumber = contractNumber;
             AgreementDate = agreementDate;
             ValidityDate = validityDate;
             Customer = customer;
             Contractor = contractor;
-            Localitieses = localities;
+            Localities = localities;
+            Photo = photo;
+            
+            //TODO: Создание контракта в бд
+        }
+
+        public void EditPhoto(Image photo)
+        {
+            //TODO: Изменение фото контракта в бд
+        }
+
+        public void DeletePhoto(Image photo)
+        {
+            //TODO: Удаление фото контракта в бд
         }
     }
 }

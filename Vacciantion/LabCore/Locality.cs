@@ -2,15 +2,15 @@
 {
     public class Locality
     {
-        public int Id { get; }
-        public string Title { get; }
-        public int Cost { get; }
+        private string Title { get; }
+        private int Cost { get; }
 
-        public Locality(int id, string title, int cost)
+        public Locality(string title, int cost)
         {
-            Id = id;
             Title = title;
             Cost = cost;
+            
+            //TODO: Создание населенного пункта в бд
         }
     }
 }

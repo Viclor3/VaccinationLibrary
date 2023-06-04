@@ -2,19 +2,19 @@
 {
     public class Role
     {
-        public int Id { get; }
-        public string Name { get; }
-        public bool CanEditAnimals { get; }
-        public bool CanEditOrganizations { get; }
-        public bool CanEditMunicipalContracts { get; }
+        private string Name { get; }
+        private bool CanEditAnimals { get; }
+        private bool CanEditOrganizations { get; }
+        private bool CanEditMunicipalContracts { get; }
 
-        public Role(int id, string name, bool canEditAnimals, bool canEditOrganizations, bool canEditMunicipalContracts)
+        public Role(string name, bool canEditAnimals, bool canEditOrganizations, bool canEditMunicipalContracts)
         {
-            Id = id;
             Name = name;
             CanEditAnimals = canEditAnimals;
             CanEditOrganizations = canEditOrganizations;
             CanEditMunicipalContracts = canEditMunicipalContracts;
+            
+            //TODO: Создание роли в бд
         }
     }
 }

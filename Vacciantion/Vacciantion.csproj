@@ -60,13 +60,13 @@
             <SubType>Code</SubType>
         </Compile>
         <Compile Include="LabCore\Animal.cs" />
-        <Compile Include="LabCore\AnimalCategory.cs" />
         <Compile Include="LabCore\AnimalController.cs" />
         <Compile Include="LabCore\AuthorizeController.cs" />
-        <Compile Include="LabCore\Gender.cs" />
         <Compile Include="LabCore\Locality.cs" />
         <Compile Include="LabCore\MunicipalContract.cs" />
+        <Compile Include="LabCore\MunicipalContractController.cs" />
         <Compile Include="LabCore\Organization.cs" />
+        <Compile Include="LabCore\OrganizationController.cs" />
         <Compile Include="LabCore\OrganizationType.cs" />
         <Compile Include="LabCore\Role.cs" />
         <Compile Include="LabCore\User.cs" />
